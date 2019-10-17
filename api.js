@@ -49,21 +49,21 @@ function displayResults(json){
     let rHouse = houseArray[rNum2]
         console.log(rHouse)
 
-    let rBoggart = json[rNum3].boggart
+    let rBoggart = json[rNum3].boggart || boggartArray[rNum9]
     if (rBoggart !== undefined) {
         console.log(rBoggart)
     } else {
         console.log(boggartArray[rNum9]);
     }
 
-    let rPatronus = json[rNum4].patronus
+    let rPatronus = json[rNum4].patronus || patronusArray[rNum10]
     if (rPatronus !== undefined) {
         console.log(rPatronus)
     } else {
         console.log(patronusArray[rNum10]);
     }
 
-    let rWand = json[rNum5].wand
+    let rWand = json[rNum5].wand || wandArray[rNum11]
     if (rWand !== undefined) {
         console.log(rWand)
     } else {
@@ -106,7 +106,7 @@ function displayResults(json){
     let para = document.createElement('p');
     section.appendChild(para);
 
-    para.textContent = `Welcome to Hogwarts School of Witchcraft and Wizardry! You have been sorted into ${rHouse}.  You befriend ${rBestie} and get into all sorts of trouble.  School is great, but you are constantly battling with ${rEnemy}.  In Defense Against the Dark Arts, you pull out your wand, ${rWand}, ready to defend yourself.  Out of a cupboard comes ${rBoggart}! But it was only a boggart.  You shout, "Riddikulus!" and it retreats to its cupboard.  With the help of Professor Lupin, you learn Expecto Patronum to defend against dementors.  A wispy silver ${rPatronus} leaps from your wand.  Eventually you fall in love with ${rSpouse} and get married.`
+    para.textContent = `Welcome to Hogwarts School of Witchcraft and Wizardry! You have been sorted into ${rHouse}.  You befriend ${rBestie} and get into all sorts of trouble.  School is great, but you are constantly battling with ${rEnemy}.  In Defense Against the Dark Arts, you pull out your wand, ${rWand}, ready to defend yourself.  Out of a cupboard comes a ${rBoggart}! But it was only a boggart.  You shout, "Riddikulus!" and it retreats to its cupboard.  With the help of Professor Lupin, you learn Expecto Patronum to defend against dementors.  A wispy silver ${rPatronus} leaps from your wand.  Eventually you fall in love with ${rSpouse} and get married.`
 
     console.log(document.getElementsByTagName('p'))
 };
