@@ -1,0 +1,92 @@
+body {
+    background:black;
+    overflow: hidden;
+}
+
+.trelawney img {
+    width:45vw;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.results {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background:black;
+    margin:0 auto;
+    color:white;
+    /* margin-right:26.85vw;
+    margin-left:26.85vw; */
+    height: 20vh;
+    width:55vw;
+    position:relative;
+    bottom:35px;
+    font-family: 'courgette';
+    font-size: 20px;
+    border-radius:10px;
+}
+
+.content {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.trelawney {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    background-color: transparent;
+    width:230px;
+    height:230px;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    position: relative;
+    bottom: 56vh;
+}
+
+/* h1 { */
+    /* display:flex;
+    justify-content: center; */
+    /* margin: 0 auto;
+    background:transparent;
+    color:black;
+    font-size:40px;
+    font-weight:bold;
+    position:fixed;
+    align-items: center;
+    height: 10vh;
+    width:42vw;
+    text-align: center; */
+/* } */
+
+
+.heading img {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    background: transparent;
+    position:fixed;
+    width:45vw;
+    height:auto;
+    margin-left:27.5%;
+    margin-right: 27.5%;
+
+}
+
+
+
