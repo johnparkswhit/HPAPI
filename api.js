@@ -39,6 +39,9 @@ function fetchData(){
 
 
 function displayResults(json){
+    while (section.firstChild) { //looking at first search request
+        section.removeChild(section.firstChild);  //removing first fetch results with replacement search
+      }
     let rSpouse = json[rNum1].name
     if (rSpouse !== undefined) {
         console.log(rSpouse)
